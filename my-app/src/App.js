@@ -43,6 +43,7 @@ const App = () => {
           Search
         </button>
       </form> 
+      <div className="recipes">
       {recipes.map(recipe => (
         <Recipe 
           title={recipe.recipe.label} 
@@ -51,7 +52,7 @@ const App = () => {
           ingredients={recipe.recipe.ingredients}
         />
       ))}
-  
+      </div>
     </div>
   )
 }
